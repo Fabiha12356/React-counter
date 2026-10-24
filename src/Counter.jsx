@@ -13,7 +13,6 @@ export const Counter = () => {
         <div className="counter-display">
             <span id="count">0</span>
         </div>
-
         <div className="buttons">
             <button className="btn minus">−</button>
             <button className="btn plus">+</button>
