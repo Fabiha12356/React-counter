@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>react-counter</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
+       <div class="counter-card">
+
+        <div class="icon">＋</div>
+
+        <h1>Counter</h1>
+        <p>Click the buttons to change the value</p>
+
+        <div class="counter-display">
+            <span id="count">0</span>
+        </div>
+        <div class="buttons">
+            <button class="btn minus">−</button>
+            <button class="btn plus">+</button>
+        </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
