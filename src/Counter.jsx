@@ -1,21 +1,36 @@
 import React from 'react'
+import { useState } from 'react'
 import "./Counter.css"
 
 export const Counter = () => {
+
+    let [count , setCount] = useState(0)
+
+//   function :-
+    let Add = () =>{
+      setCount(count = count + 1)
+        console.log(count);
+    }
+
+    let Sub = () =>{
+       setCount(count = count - 1)
+        console.log(count);
+    }
+
+
+
   return (
     <div className="counter-card">
-
-        <div className="icon">＋</div>
 
         <h1>Counter</h1>
         <p>Click the buttons to change the value</p>
 
         <div className="counter-display">
-            <span id="count">0</span>
+            <span id="count">{count}</span>
         </div>
         <div className="buttons">
-            <button className="btn minus">−</button>
-            <button className="btn plus">+</button>
+            <button className="btn minus" onClick={Sub}>−</button>
+            <button className="btn plus" onClick={Add}>+</button>
         </div>
     </div>
   )

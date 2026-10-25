@@ -84,10 +84,10 @@ p {
     background: linear-gradient(135deg, #25c7f4, #2877fa);
 }
 
-.btn:hover {
+/* .btn:hover {
     transform: translateY(-5px) scale(1.08);
     box-shadow: 0 8px 25px rgba(100, 100, 255, 0.3);
-}
+} */
 
 @media (max-width: 480px) {
     .counter-card {
